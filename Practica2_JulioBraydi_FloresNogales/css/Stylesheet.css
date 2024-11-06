@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset -- Sirve para que todos los elementos partan de propiedades base 0*/
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
 /* Header Fijo */
@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 2em;
+    padding: 0em 2em;
 }
 
 .navbar a {
@@ -41,4 +41,90 @@ body {
     width: 30px;
 }
 
+/* Sección Principal incluye las secciones 1,2,3...*/
+.main-content {
+    margin-top: 80px;
+}
 
+/* Sección 1 */
+.section {
+    width: 100%;
+    padding: 2em;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-text {
+    max-width: 50%;
+    position: right;
+    margin-right: 0%;
+    padding: 5%;
+}
+
+.section h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /*font-family: 'Arial', sans-serif; */
+    font-size: 48px;
+    color: #e05a4e;
+    text-transform: uppercase;
+}
+.section h2 {
+    color: #e05a4e;
+    text-transform: uppercase;
+}
+.section p {
+    margin: 10px 0;
+}
+
+.button {
+    background-color:  #4a53fa;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.section-image-container {
+    max-width: 50%;
+    margin-top: 0; 
+    display: flex;
+    justify-content: center; 
+}
+.section-image-container2 {
+    max-width: 50%;
+    margin-top: 0; 
+    display: flex;
+    justify-content: center; 
+}
+
+.section-image-container img {
+    max-width: 100%;
+}
+.section-image-container2 img {
+    width: 100em;
+    max-width: 80%;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #4a53fa;
+    width: 100%;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.footer-links a, .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
