@@ -1,4 +1,5 @@
 /* Reset -- Sirve para que todos los elementos partan de propiedades base 0*/
+/* Este reset se aplica a todos los elementos de la página para asegurar un punto de partida uniforme */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ body {
 }
 
 /* Header Fijo */
+/* Aquí se definen los estilos para el encabezado fijo de la página */
 .header {
     background-color: #4a53fa;
     position: fixed;
@@ -24,29 +26,32 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0em 2em;
+    padding: 0 10%;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 1.5rem;
+    font-size: 1.1rem;
 }
 
-.logo-image{
-    width: 100px;
+.logo-image {
+    width: 6rem;
 }
 
-.search-image{
-    width: 30px;
+.search-image {
+    width: 2rem;
 }
 
 /* Sección Principal incluye las secciones 1,2,3...*/
+/* Aquí se definen los estilos generales para el contenido principal de la página */
 .main-content {
     margin-top: 80px;
 }
 
-/* Sección 1 */
+/* Sección 1 y 2 */
+/* Aquí se definen los estilos específicos para la primera y segunda sección */
 .section {
     width: 100%;
     padding: 2em;
@@ -56,75 +61,168 @@ body {
     justify-content: space-between;
 }
 
+.text-box {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .text-box h2 {
+    background-color: #4a53fa;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: inline-block;
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
 .section-text {
     max-width: 50%;
-    position: right;
-    margin-right: 0%;
     padding: 5%;
+    font-size: 1.1rem;
 }
 
 .section h1 {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    /*font-family: 'Arial', sans-serif; */
-    font-size: 48px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
     color: #e05a4e;
     text-transform: uppercase;
 }
+
 .section h2 {
     color: #e05a4e;
     text-transform: uppercase;
+    font-size: 2rem;
 }
+
 .section p {
-    margin: 10px 0;
+    margin: 0.7rem 0;
 }
 
 .button {
-    background-color:  #4a53fa;
+    background-color: #4a53fa;
     color: #fff;
-    padding: 10px 20px;
+    padding: 0.7rem 1.5rem;
     text-decoration: none;
     border-radius: 20px;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 0.7rem;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background-color: #ef0adc;
+    color: #fff;
 }
 
 .section-image-container {
     max-width: 50%;
-    margin-top: 0; 
     display: flex;
-    justify-content: center; 
-}
-.section-image-container2 {
-    max-width: 50%;
-    margin-top: 0; 
-    display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .section-image-container img {
     max-width: 100%;
 }
+
 .section-image-container2 img {
-    width: 100em;
     max-width: 80%;
 }
 
+/*Seccion3*/
+/* Aquí se definen los estilos específicos para la tercera sección (formulario de suscripción) */
+.section-tres .section-text3 {
+    margin-left: 3rem;
+    font-size: 1.1rem;
+}
 
-/* Footer */
+.section-tres h2 {
+    color: #e05a4e;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.section-tres form {
+    display: flex;
+    gap: 3rem;
+}
+
+.section-tres .form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-tres .form-section label {
+    margin-bottom: 0.5rem;
+}
+
+.section-tres .form-section input {
+    padding: 0.7rem;
+    border: 1px solid #000000;
+    width: 20rem;
+    font-size: 1rem;
+}
+
+.section-tres .submit-button {
+    background-color: #4a53fa;
+    color: #fff;
+    width: 9.5rem;
+    padding: 0.7rem;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 1.6rem;
+    font-size: 1rem;
+}
+
+.section-tres .submit-button:hover {
+    background-color: #ef0adc;
+}
+
+/*Footer*/
+/* Aquí se definen los estilos para el pie de página de la página web */
 .footer {
     background-color: #4a53fa;
-    width: 100%;
-    color: white;
-    padding: 1em;
-    text-align: center;
+    color: #fff;
+    padding: 1.5rem 0;
 }
 
-.footer-links a, .social-media a {
-    color: white;
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.left-links,
+.right-links {
+    display: flex;
+    align-items: center;
+}
+
+.left-links a,
+.right-links a {
+    color: #fff;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 1.7rem;
+    font-size: 1rem;
 }
 
-.social-media a:hover {
-    text-decoration: underline;
+.logo-container {
+    justify-content: center;
+}
+
+.logo-image {
+    max-width: 9rem;
+    height: auto;
+}
+
+.sm-logo {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 1.7rem;
 }
